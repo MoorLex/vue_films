@@ -1,0 +1,65 @@
+body{
+  font-size: 14px;
+  cursor: default;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.no-select, .btn{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.fill-parent{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.bg-image{
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-linear{
+  background-image: linear-gradient(to bottom, transparent, fade_out(#000, .1));
+}
+
+.film-card{
+  .film-title{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.upcoming-slider{
+
+  .swiper-slide{
+    width: 80vw;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .swiper-slide{
+      width: 40vw;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .swiper-slide{
+      width: 28vw;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .swiper-slide{
+      width: 18vw;
+    }
+  }
+}

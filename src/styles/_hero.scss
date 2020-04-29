@@ -1,0 +1,28 @@
+.hero{
+  .slide-overview{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .slider-dot{
+    display: block;
+    padding: 10px 4px;
+    cursor: pointer;
+
+    &:after{
+      content: '';
+      width: 4px;
+      height: 4px;
+      display: block;
+      cursor: pointer;
+      background: #fff;
+      border-radius: 50%;
+    }
+
+    &.active:after{
+      background: $danger;
+    }
+  }
+}
